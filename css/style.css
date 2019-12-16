@@ -6,9 +6,42 @@ font-family: 'Droid Serif', serif;
 @font-face {
     font-family:'Flavour';
     src: url('../fonts/FlavourRegular.eot');
-	src: url('../fonts/FlavourRegular.eot?#iefix') format('embedded-opentype');
-	src: url('../fonts/FlavourRegular.woff') format('woff');
-	src: url('../fonts/FlavourRegular.ttf') format('truetype');
+	  src: url('../fonts/FlavourRegular.eot?#iefix') format('embedded-opentype');
+	  src: url('../fonts/FlavourRegular.woff') format('woff');
+	  src: url('../fonts/FlavourRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family:'BebasKai-Regular';
+    src: url('../fonts/BebasKai-Regular.eot');
+	  src: url('../fonts/BebasKai-Regular.eot?#iefix') format('embedded-opentype');
+	  src: url('../fonts/BebasKai-Regular.woff') format('woff');
+	  src: url('../fonts/BebasKai-Regular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family:'BebasNeue-Book';
+    src: url('../fonts/BebasNeue-Book.eot');
+	  src: url('../fonts/BebasNeue-Book.eot?#iefix') format('embedded-opentype');
+	  src: url('../fonts/BebasNeue-Book.woff') format('woff');
+	  src: url('../fonts/BebasNeue-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family:'BebasNeue-Regular';
+    src: url('../fonts/BebasNeue-Regular.eot');
+	  src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype');
+	  src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+	  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
@@ -49,14 +82,14 @@ body { font-family: 'Open Sans', sans-serif; background: #fff; }
 
 
 header { position: fixed; top: 0; left: 0; width: 100%; z-index: 2000; padding: 1em; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-header .logo {width: 70px; float: left; margin: 2em;  -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s;  }
+header .logo {width: 170px; float: left; margin: 2em;  -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s;  }
 header nav { float: right; padding: 2em; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s;  }
 header nav ul li { list-style: none; display: inline-block; vertical-align: middle; padding: 0.5em; }
 header nav ul li a img { opacity: 0.6; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
 header nav ul li a:hover img { opacity: 1; }
 
-.gray-header { background: rgba(50,50,50,0.95); -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-.gray-header .logo {width: 50px !important; margin: 0 !important;  }
+.gray-header { background: rgb(241, 243, 244); -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
+.gray-header .logo {    width: 160px !important; margin: 9px 42px !important;  }
 .gray-header nav { padding: 0 0.5em !important; }
 .gray-header nav ul li a img { width: 30px !important; }
 
@@ -70,8 +103,8 @@ header nav ul li a:hover img { opacity: 1; }
 .slider-home { position: fixed !important; top: 0; left: 0; right: 0; height: 90%; }
 .slider-home .swiper-wrapper .swiper-slide .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.0); }
 .info-slider { position: absolute; z-index: 2; bottom: 20%; left: 10%; }
-.info-slider h2 { font-family:'Flavour', sans-serif; font-weight: 300; letter-spacing: 0.1em; color: #fff; font-size: 2.25em }
-.info-slider .bt { font-family:'Flavour', sans-serif !important; }
+.info-slider h2 { font-family:'BebasKai-Regular', sans-serif; font-weight: 300; letter-spacing: 0.1em; color: #fff; font-size: 2.25em }
+.info-slider .bt { font-family:'BebasKai-Regular', sans-serif !important; }
 
 .slide1 { background: url('../img/slider1.jpg') center center no-repeat; background-size: cover; }
 
@@ -115,7 +148,7 @@ background: linear-gradient(to right, #8a384a 20%,#f39687 80%); filter: progid:D
 .cabernet-hover a svg .color-square{ fill: #8a374a; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 .cabernet-hover a:hover svg .color-square{ opacity: 1; }
 
-.tannat-back { background: #bbb6da; background: -moz-linear-gradient(left, #bbb6da 20%, #8a80bc 80%); background: -webkit-linear-gradient(left, #bbb6da 20%,#8a80bc 80%); 
+.tannat-back { background: #bbb6da; background: -moz-linear-gradient(left, #bbb6da 20%, #8a80bc 80%); background: -webkit-linear-gradient(left, #bbb6da 20%,#8a80bc 80%);
 background: linear-gradient(to right, #bbb6da 20%,#8a80bc 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbb6da', endColorstr='#8a80bc',GradientType=1 ); /* IE6-9 */
 }
 
@@ -153,7 +186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7baa7b', end
 .torrontes2-hover a svg .color-square{ fill: #298cb0; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 .torrontes2-hover a:hover svg .color-square{ opacity: 1; }
 
-.torrontes3-back { background: #ed536b; background: -moz-linear-gradient(left, #ed536b 20%, #eaa77c 80%); background: -webkit-linear-gradient(left, #ed536b 20%,#eaa77c 80%); 
+.torrontes3-back { background: #ed536b; background: -moz-linear-gradient(left, #ed536b 20%, #eaa77c 80%); background: -webkit-linear-gradient(left, #ed536b 20%,#eaa77c 80%);
 background: linear-gradient(to right, #ed536b 20%,#eaa77c 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed536b', endColorstr='#eaa77c',GradientType=1 ); }
 
 .torrontes3-hover a svg .color-square{ fill: #ed536b; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
@@ -169,12 +202,12 @@ background: linear-gradient(to right, #ed536b 20%,#eaa77c 80%); filter: progid:D
     height: auto;  }
 .wine-box picture img { width: 100%; height: auto; }
 .svg-container-desktop { position: absolute; display: block; width: 100%; height: 100%;  }
-.wine-info { width: 49.5%; display: inline-block; vertical-align: top; margin: 2em 0 0 0;} 
-.wine-info h3 { font-size: 3em; font-weight: 400; color: #fff; line-height: 1.1em; margin: 1.25em 0 0 0;  } 
-.wine-info p { color: #fff; letter-spacing: 0.2em; line-height: 2em; text-align: justify;     margin: 2em 0 0 0; } 
-.wine-info h4 { display: inline-block; vertical-align: middle; font-size: 1.8em; color: #fff; line-height: 1.1em; margin: 1em 0 0 0;  } 
-.wine-info h4 img { display: inline-block; vertical-align: middle; width: 30px; } 
-.wine-info h4 span { display: inline-block; vertical-align: middle; } 
+.wine-info { width: 49.5%; display: inline-block; vertical-align: top; margin: 2em 0 0 0;}
+.wine-info h3 { font-size: 3em; font-weight: 400; color: #fff; line-height: 1.1em; margin: 1.25em 0 0 0;  }
+.wine-info p { color: #fff; letter-spacing: 0.2em; line-height: 2em; text-align: justify;     margin: 2em 0 0 0; }
+.wine-info h4 { display: inline-block; vertical-align: middle; font-size: 1.8em; color: #fff; line-height: 1.1em; margin: 1em 0 0 0;  }
+.wine-info h4 img { display: inline-block; vertical-align: middle; width: 30px; }
+.wine-info h4 span { display: inline-block; vertical-align: middle; }
 .wine-info .bt { display: none; }
 .invert-box svg { right: 0; left: inherit; }
 .invert-box picture { left: 30%; }
@@ -222,8 +255,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     a, a:hover { -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
 }
 
-@media screen and (max-width: 800px) { 
-    
+@media screen and (max-width: 800px) {
+
     header .logo { margin: 0; }
     header nav { padding: 0; }
     .slider-home { height: 55%; position: absolute !important; }
@@ -234,7 +267,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .grid .swiper-wrapper { flex-wrap: nowrap; }
     .grid .swiper-wrapper div { margin: 0 0 1em 0; padding: 0; }
     .grid .swiper-wrapper div span { font-size: 0.8em }
-    
+
     .slider-home .swiper-button-next, .swiper-button-prev { display: none; }
     .wine-box { margin: 0; height: 520px; }
     .wine-info { margin: 0.5em 0 0 0; }
@@ -247,21 +280,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .wine-box picture img { width: 48%; display: block; margin: 0 auto; }
     .wine-box svg .tech-file { display: none;  }
     .wine-info .bt { display: inline-block; margin: 2em 0; text-decoration: none; font-size: 0.7em }
-    
+
     .contacto form { width: 480px; }
 }
 
-@media screen and (max-width: 720px) { 
+@media screen and (max-width: 720px) {
     .wine-box picture img { width: 50%; }
 }
 
 @media screen and (max-width: 600px) {
     .wine-box picture img { width: 60%; }
-    
+
 }
 
 @media screen and (max-width: 550px) {
-    
+
     .age-content { width: 80%; }
     header { padding: 1em; }
     header nav ul li { padding: 0 0.5em !important; }
@@ -284,50 +317,50 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .wine-info h4 img { padding: 0.15em }
     .wine-info h4 span { text-align: center; width: 100%; }
     .wine-info p { text-align: center; width: 100%; }
-    
+
     .malbec-back, .cabernet-back, .tannat-back, .syrah-back, .torrontes-back, .chardonnay-back, .torrontes2-back, .torrontes3-back { background: none; }
-    
+
     .malbec-back .wine-box-mobile { background: #d34a60; }
     .malbec-back .wine-info{ background: #d34a60; background: -moz-linear-gradient(top, #d34a60 0%, #871724 50%); background: -webkit-linear-gradient(top, #d34a60 0%,#871724 50%); background: linear-gradient(to bottom, #d34a60 0%,#871724 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d34a60', endColorstr='#871724',GradientType=0 ); }
-    
+
     .cabernet-back .wine-box-mobile { background: #f39687; }
     .cabernet-back .wine-info { background: #f39687; background: -moz-linear-gradient(top, #f39687 0%, #8a384a 50%); background: -webkit-linear-gradient(top, #f39687 0%,#8a384a 50%); background: linear-gradient(to bottom, #f39687 0%,#8a384a 50%);  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f39687', endColorstr='#8a384a',GradientType=0 ); }
-    
+
     .tannat-back .wine-box-mobile { background: #bbb6da; }
     .tannat-back .wine-info { background: #bbb6da; background: -moz-linear-gradient(top, #bbb6da 0%, #8a80bc 50%); background: -webkit-linear-gradient(top, #bbb6da 0%,#8a80bc 50%); background: linear-gradient(to bottom, #bbb6da 0%,#8a80bc 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbb6da', endColorstr='#8a80bc',GradientType=0 ); }
-    
+
     .syrah-back .wine-box-mobile { background: #94cc95; }
     .syrah-back .wine-info { background: #94cc95; background: -moz-linear-gradient(top, #94cc95 0%, #3d5a62 50%); /background: -webkit-linear-gradient(top, #94cc95 0%,#3d5a62 50%); background: linear-gradient(to bottom, #94cc95 0%,#3d5a62 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94cc95', endColorstr='#3d5a62',GradientType=0 ); }
 
     .torrontes-back .wine-box-mobile { background: #cccca7; }
     .torrontes-back .wine-info { background: #cccca7; background: -moz-linear-gradient(top, #cccca7 0%, #a89250 50%); background: -webkit-linear-gradient(top, #cccca7 0%,#a89250 50%); background: linear-gradient(to bottom, #cccca7 0%,#a89250 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccca7', endColorstr='#a89250',GradientType=0 ); }
-    
+
     .chardonnay-back .wine-box-mobile { background: #e0da84; }
     .chardonnay-back .wine-info { background: #e0da84; background: -moz-linear-gradient(top,  #e0da84 0%, #7baa7b 40%, #7baa7b 40%); background: -webkit-linear-gradient(top,  #e0da84 0%,#7baa7b 40%,#7baa7b 40%); background: linear-gradient(to bottom,  #e0da84 0%,#7baa7b 40%,#7baa7b 40%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0da84', endColorstr='#7baa7b',GradientType=0 ); }
-    
+
     .torrontes2-back .wine-box-mobile { background: #49c2c7; }
     .torrontes2-back .wine-info { background: #49c2c7; background: -moz-linear-gradient(top,  #49c2c7 0%, #298cb0 40%); background: -webkit-linear-gradient(top,  #49c2c7 0%,#298cb0 40%); background: linear-gradient(to bottom,  #49c2c7 0%,#298cb0 40%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c2c7', endColorstr='#298cb0',GradientType=0 ); }
-    
+
     .torrontes3-back .wine-box-mobile { background: #eaa77c; }
     .torrontes3-back .wine-info { background: #eaa77c; background: -moz-linear-gradient(top,  #eaa77c 0%, #ed536b 40%); background: -webkit-linear-gradient(top,  #eaa77c 0%,#ed536b 40%); background: linear-gradient(to bottom,  #eaa77c 0%,#ed536b 40%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaa77c', endColorstr='#ed536b',GradientType=0 ); }
-    
+
     footer .wrapper { padding: 2em 1em; }
-    
+
     .contacto form { width: 85%; margin: 8em 0 2em 0; padding: 0; }
     .contacto form h1 { font-size: 2em; }
     .contacto form div { width: 95%; }
     .area-field .field-name { padding: 0.5em !important; }
     .contacto textarea { margin: 0.5em 0 }
-    
-    .legales { margin: 8em auto 2em auto; }
-} 
 
-@media screen and (max-width: 480px) { 
+    .legales { margin: 8em auto 2em auto; }
+}
+
+@media screen and (max-width: 480px) {
     .wine-info h3 { font-size: 1.7em }
     .wine-info h3 br { display: none;  }
 }
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 400px) {
 
 
 }
@@ -335,6 +368,3 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 @media screen and (max-width: 320px) {
     .wine-box-mobile img { width: 90%; height: auto; }
 }
-
-
-
