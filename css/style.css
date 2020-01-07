@@ -1,370 +1,1352 @@
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Droid Serif', serif;
-*/
-
-@font-face {
-    font-family:'Flavour';
-    src: url('../fonts/FlavourRegular.eot');
-	  src: url('../fonts/FlavourRegular.eot?#iefix') format('embedded-opentype');
-	  src: url('../fonts/FlavourRegular.woff') format('woff');
-	  src: url('../fonts/FlavourRegular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00FE;
+/* font-family: 'Open Sans', sans-serif;
+ font-family: 'Droid Serif', serif;
+ */
+ @font-face {
+     font-family:'Flavour';
+     src: url('../fonts/FlavourRegular.eot');
+     src: url('../fonts/FlavourRegular.eot?#iefix') format('embedded-opentype');
+     src: url('../fonts/FlavourRegular.woff') format('woff');
+     src: url('../fonts/FlavourRegular.ttf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+     font-stretch: normal;
+     unicode-range: U+0020-00FE;
 }
-@font-face {
-    font-family:'BebasKai-Regular';
-    src: url('../fonts/BebasKai-Regular.eot');
-	  src: url('../fonts/BebasKai-Regular.eot?#iefix') format('embedded-opentype');
-	  src: url('../fonts/BebasKai-Regular.woff') format('woff');
-	  src: url('../fonts/BebasKai-Regular.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00FE;
+ @font-face {
+     font-family:'BebasKai-Regular';
+     src: url('../fonts/BebasKai-Regular.eot');
+     src: url('../fonts/BebasKai-Regular.eot?#iefix') format('embedded-opentype');
+     src: url('../fonts/BebasKai-Regular.woff') format('woff');
+     src: url('../fonts/BebasKai-Regular.otf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+     font-stretch: normal;
+     unicode-range: U+0020-00FE;
 }
-@font-face {
-    font-family:'BebasNeue-Book';
-    src: url('../fonts/BebasNeue-Book.eot');
-	  src: url('../fonts/BebasNeue-Book.eot?#iefix') format('embedded-opentype');
-	  src: url('../fonts/BebasNeue-Book.woff') format('woff');
-	  src: url('../fonts/BebasNeue-Book.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00FE;
+ @font-face {
+     font-family:'BebasNeue-Book';
+     src: url('../fonts/BebasNeue-Book.eot');
+     src: url('../fonts/BebasNeue-Book.eot?#iefix') format('embedded-opentype');
+     src: url('../fonts/BebasNeue-Book.woff') format('woff');
+     src: url('../fonts/BebasNeue-Book.ttf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+     font-stretch: normal;
+     unicode-range: U+0020-00FE;
 }
-@font-face {
-    font-family:'BebasNeue-Regular';
-    src: url('../fonts/BebasNeue-Regular.eot');
-	  src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype');
-	  src: url('../fonts/BebasNeue-Regular.woff') format('woff');
-	  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00FE;
+ @font-face {
+     font-family:'BebasNeue-Regular';
+     src: url('../fonts/BebasNeue-Regular.eot');
+     src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype');
+     src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+     src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+     font-stretch: normal;
+     unicode-range: U+0020-00FE;
 }
-
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}aufull-cdio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;outline: none;}h1{font-size:2em;margin:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
-em { font-style: normal !important; }
-ol, ul { list-style: none; margin: 0; padding: 0; }
-
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-body { overflow-x: hidden; padding: 0; margin: 0; }
-a, a:hover, a:visited, a:active, img { outline: 0; }
-
-h1, h2, h3, h4, h5, h6 { font-family: 'Cardo', serif; font-weight: 400;  }
-
-p { font-family: 'Cardo', serif; font-weight: 400; }
-
-.overflow-auto { overflow: auto; }
-
-#preloader { position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 9997; background: #222; background-image: url('../img/logo-elementos.svg'); background-size: 70px; background-repeat: no-repeat;  background-position: center 48%; }
-
-.ani { -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-
-body { font-family: 'Open Sans', sans-serif; background: #fff; }
-
-
+ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
+    display:block;
+}
+audio,canvas,video{
+    display:inline-block;
+}
+aufull-cdio:not([controls]){
+    display:none;
+    height:0;
+}
+[hidden]{
+    display:none;
+}
+html{
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+}
+body{
+    margin:0;
+}
+a:focus{
+    outline:thin dotted;
+}
+a:active,a:hover{
+    outline:0;
+    outline: none;
+}
+h1{
+    font-size:2em;
+    margin:0;
+}
+abbr[title]{
+    border-bottom:1px dotted;
+}
+b,strong{
+    font-weight:bold;
+}
+dfn{
+    font-style:italic;
+}
+hr{
+    box-sizing:content-box;
+    height:0;
+}
+mark{
+    background:#ff0;
+    color:#000;
+}
+code,kbd,pre,samp{
+    font-family:monospace,serif;
+    font-size:1em;
+}
+pre{
+    white-space:pre-wrap;
+}
+q{
+    quotes:"\201C" "\201D" "\2018" "\2019";
+}
+small{
+    font-size:80%;
+}
+sub,sup{
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline;
+}
+sup{
+    top:-0.5em;
+}
+sub{
+    bottom:-0.25em;
+}
+img{
+    border:0;
+}
+svg:not(:root){
+    overflow:hidden;
+}
+figure{
+    margin:0;
+}
+fieldset{
+    border:1px solid #c0c0c0;
+    margin:0 2px;
+    padding:0.35em 0.625em 0.75em;
+}
+legend{
+    border:0;
+    padding:0;
+}
+button,input,select,textarea{
+    font-family:inherit;
+    font-size:100%;
+    margin:0;
+}
+button,input{
+    line-height:normal;
+}
+button,select{
+    text-transform:none;
+}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{
+    -webkit-appearance:button;
+    cursor:pointer;
+}
+button[disabled],html input[disabled]{
+    cursor:default;
+}
+input[type="checkbox"],input[type="radio"]{
+    box-sizing:border-box;
+    padding:0;
+}
+input[type="search"]{
+    -webkit-appearance:textfield;
+    box-sizing:content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{
+    -webkit-appearance:none;
+}
+button::-moz-focus-inner,input::-moz-focus-inner{
+    border:0;
+    padding:0;
+}
+textarea{
+    overflow:auto;
+    vertical-align:top;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+ em {
+     font-style: normal !important;
+}
+ ol, ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+ body {
+     overflow-x: hidden;
+     padding: 0;
+     margin: 0;
+     font-family:'BebasKai-Regular';
+}
+ a, a:hover, a:visited, a:active, img {
+     outline: 0;
+}
+ h1, h2, h3, h4, h5, h6 {
+     font-family:'BebasKai-Regular', serif;
+     font-weight: 400;
+}
+ p {
+    font-family:'BebasKai-Regular', serif;
+     font-weight: 400;
+}
+ .overflow-auto {
+     overflow: auto;
+}
+ #preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9997;
+     background: #222;
+     background-image: url('../img/logo-elementos.svg');
+     background-size: 70px;
+     background-repeat: no-repeat;
+     background-position: center 48%;
+}
+ .ani {
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ body {
+     font-family: 'BebasKai-Regular','Open Sans', sans-serif;
+     background: #fff;
+}
 /* FILTRO DE EDAD */
-
-.age-filter { position: fixed; display: table; top: 0; left: 0; z-index: 9995; width: 100%; height: 100%; min-height: 100%; background: rgba(0,0,0,0.8); padding: 0; text-align: center; }
-.center-content { display: table-cell; vertical-align: middle; width: 100%; height: 100%; text-align: center; }
-.age-content { background: #333;  width: 430px; padding: 2em; color: #fff; margin: 0 auto; }
-.age-content p { font-family: 'Oswald', sans-serif; font-size: 1.1em; font-weight: 300; margin: 1.5em 0; }
-.age-content p:last-child { width: 80%; margin: 0 auto; font-size: 0.9em; font-style: italic; margin: 1.5em auto; }
-.age-content p:last-child { width: 80%; margin: 0 auto; font-size: 0.9em; font-style: italic; margin: 1.5em auto; }
-.age-content input { text-transform: uppercase; }
-
-
-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 2000; padding: 1em; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-header .logo {width: 170px; float: left; margin: 2em;  -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s;  }
-header nav { float: right; padding: 2em; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s;  }
-header nav ul li { list-style: none; display: inline-block; vertical-align: middle; padding: 0.5em; }
-header nav ul li a img { opacity: 0.6; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-header nav ul li a:hover img { opacity: 1; }
-
-.gray-header { background: rgb(241, 243, 244); -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-.gray-header .logo {    width: 160px !important; margin: 9px 42px !important;  }
-.gray-header nav { padding: 0 0.5em !important; }
-.gray-header nav ul li a img { width: 30px !important; }
-
-.nav-up { top: -200px !important; }
-.nav-down { top: 0; }
-
-.bt { display: inline-block; vertical-align: top; padding: 0.7em 0.9em; font-size: 0.9em; font-family: 'Oswald', sans-serif; font-weight: 300; letter-spacing: 0.075em; text-decoration: none;  }
-.white-empty { background: none; color: #fff; border: 1px solid #fff; -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-.white-empty:hover { background: #fff; color: #333;  }
-
-.slider-home { position: fixed !important; top: 0; left: 0; right: 0; height: 90%; }
-.slider-home .swiper-wrapper .swiper-slide .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.0); }
-.info-slider { position: absolute; z-index: 2; bottom: 20%; left: 10%; }
-.info-slider h2 { font-family:'BebasKai-Regular', sans-serif; font-weight: 300; letter-spacing: 0.1em; color: #fff; font-size: 2.25em }
-.info-slider .bt { font-family:'BebasKai-Regular', sans-serif !important; }
-
-.slide1 { background: url('../img/slider1.jpg') center center no-repeat; background-size: cover; }
-
-main { position: absolute; z-index: 100; top: 90%; left: 0; right: 0; background: #fff; }
-.wrapper { width: 100%; max-width: 1200px; margin: 2em auto; padding: 0 2em; }
-.grid-wines { margin: 3em auto; }
-.grid .swiper-wrapper{ width: 100%; padding: 2em 0; flex-wrap: wrap;  }
-.grid .swiper-wrapper div { display: inline-block; vertical-align: top; width: 25%; margin: 0 -2px; padding: 1em; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-.grid .swiper-wrapper div a { display: block; position: relative; width: 100%; color: #666; text-decoration: none; font-size: 1.1em; font-weight: 300; letter-spacing: 0.025em; cursor: pointer; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-.grid .swiper-wrapper div img { display: block; margin: 0 auto; width: 70%; }
-.grid .swiper-wrapper div span {  display: block; width: 100%; text-align: center; padding: 1em; font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.02em; }
-.grid .swiper-wrapper div .hover { position: absolute; left: 15%; right: 15%; top: 20%; width: 70% !important; height: auto; z-index: -1; -webkit-transition: all 0.5s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.5s; }
-.grid .swiper-wrapper div .hover rect { -webkit-transition: all 0.5s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.5s;  }
-.grid .swiper-wrapper div a:hover .hover { top: 15%; left: 10%; right: 10%; width: 80% !important; }
-.grid .swiper-wrapper div a:hover .svg-box-gold { stroke: #bf873c }
-.grid .swiper-wrapper div a:hover .svg-box-gray { stroke: #959191 }
-.grid .swiper-wrapper div a:hover .svg-box-yellow { stroke: #d8af1a }
-.grid .swiper-wrapper div a:hover .svg-box-red { stroke: #c43d22 }
-
+ .age-filter {
+     position: fixed;
+     display: table;
+     top: 0;
+     left: 0;
+     z-index: 9995;
+     width: 100%;
+     height: 100%;
+     min-height: 100%;
+     background: rgba(0,0,0,0.8);
+     padding: 0;
+     text-align: center;
+}
+ .center-content {
+     display: table-cell;
+     vertical-align: middle;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+}
+ .age-content {
+     background: #333;
+     width: 430px;
+     padding: 2em;
+     color: #fff;
+     margin: 0 auto;
+}
+ .age-content p {
+     font-family: 'Oswald', sans-serif;
+     font-size: 1.1em;
+     font-weight: 300;
+     margin: 1.5em 0;
+}
+ .age-content p:last-child {
+     width: 80%;
+     margin: 0 auto;
+     font-size: 0.9em;
+     font-style: italic;
+     margin: 1.5em auto;
+}
+ .age-content p:last-child {
+     width: 80%;
+     margin: 0 auto;
+     font-size: 0.9em;
+     font-style: italic;
+     margin: 1.5em auto;
+}
+ .age-content input {
+     text-transform: uppercase;
+}
+ header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 2000;
+     padding: 1em;
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ header .logo {
+    width: 170px;
+     float: left;
+     margin: 2em;
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ header nav {
+     float: right;
+     padding: 2em;
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ header nav ul li {
+     list-style: none;
+     display: inline-block;
+     vertical-align: middle;
+     padding: 0.5em;
+}
+ header nav ul li a img {
+     opacity: 0.6;
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ header nav ul li a:hover img {
+     opacity: 1;
+}
+ .gray-header {
+     background: rgb(241, 243, 244);
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ .gray-header .logo {
+     width: 160px !important;
+     margin: 9px 42px !important;
+}
+ .gray-header nav {
+     padding: 0 0.5em !important;
+}
+ .gray-header nav ul li a img {
+     width: 30px !important;
+}
+ .nav-up {
+     top: -200px !important;
+}
+ .nav-down {
+     top: 0;
+}
+ .bt {
+     display: inline-block;
+     vertical-align: top;
+     padding: 0.7em 0.9em;
+     font-size: 0.9em;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 300;
+     letter-spacing: 0.075em;
+     text-decoration: none;
+}
+ .white-empty {
+     background: none;
+     color: #fff;
+     border: 1px solid #fff;
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ .white-empty:hover {
+     background: #fff;
+     color: #333;
+}
+ .slider-home {
+     position: fixed !important;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 90%;
+}
+ .slider-home .swiper-wrapper .swiper-slide .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.0);
+}
+ .info-slider {
+     position: absolute;
+     z-index: 2;
+     bottom: 20%;
+     left: 10%;
+}
+ .info-slider h2 {
+     font-family:'BebasKai-Regular', sans-serif;
+     font-weight: 300;
+     letter-spacing: 0.1em;
+     color: #fff;
+     font-size: 2.25em
+}
+ .info-slider .bt {
+     font-family:'BebasKai-Regular', sans-serif !important;
+}
+ .slide1 {
+     background: url('../img/slider1.jpg') center center no-repeat;
+     background-size: cover;
+}
+ main {
+     position: absolute;
+     z-index: 100;
+     top: 90%;
+     left: 0;
+     right: 0;
+     background: #fff;
+}
+ .wrapper {
+     width: 100%;
+     max-width: 1200px;
+     margin: 2em auto;
+     padding: 0 2em;
+}
+ .grid-wines {
+     margin: 3em auto;
+}
+ .grid .swiper-wrapper{
+     width: 100%;
+     padding: 2em 0;
+     flex-wrap: wrap;
+}
+ .grid .swiper-wrapper div {
+     display: inline-block;
+     vertical-align: top;
+     width: 25%;
+     margin: 0 -2px;
+     padding: 1em;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+}
+ .grid .swiper-wrapper div a {
+     display: block;
+     position: relative;
+     width: 100%;
+     color: #666;
+     text-decoration: none;
+     font-size: 1.1em;
+     font-weight: 300;
+     letter-spacing: 0.025em;
+     cursor: pointer;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+}
+ .grid .swiper-wrapper div img {
+     display: block;
+     margin: 0 auto;
+     width: 70%;
+}
+ .grid .swiper-wrapper div span {
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding: 1em;
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 0.02em;
+}
+ .grid .swiper-wrapper div .hover {
+     position: absolute;
+     left: 15%;
+     right: 15%;
+     top: 20%;
+     width: 70% !important;
+     height: auto;
+     z-index: -1;
+     -webkit-transition: all 0.5s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.5s;
+}
+ .grid .swiper-wrapper div .hover rect {
+     -webkit-transition: all 0.5s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.5s;
+}
+ .grid .swiper-wrapper div a:hover .hover {
+     top: 15%;
+     left: 10%;
+     right: 10%;
+     width: 80% !important;
+}
+ .grid .swiper-wrapper div a:hover .svg-box-gold {
+     stroke: #bf873c
+}
+ .grid .swiper-wrapper div a:hover .svg-box-gray {
+     stroke: #959191
+}
+ .grid .swiper-wrapper div a:hover .svg-box-yellow {
+     stroke: #d8af1a
+}
+ .grid .swiper-wrapper div a:hover .svg-box-red {
+     stroke: #c43d22
+}
 /* OCTAGON BULLETS */
-
-.swiper-pagination { padding: 1em 0; }
-.swiper-pagination-bullet { width: 15px; height: 15px; background: url(../img/octagon-white.svg) no-repeat center center !important; background-size: cover; opacity: 0.5; }
-.swiper-pagination-bullet-active { opacity: 1; }
-.grid .swiper-pagination-bullet { width: 15px; height: 15px; background: url(../img/octagon.svg) no-repeat center center !important; background-size: cover; opacity: 0.3; }
-.grid .swiper-pagination-bullet-active { opacity: 0.6; }
-.grid .swiper-pagination { padding: 0; }
-
+ .swiper-pagination {
+     padding: 1em 0;
+}
+ .swiper-pagination-bullet {
+     width: 15px;
+     height: 15px;
+     background: url(../img/octagon-white.svg) no-repeat center center !important;
+     background-size: cover;
+     opacity: 0.5;
+}
+ .swiper-pagination-bullet-active {
+     opacity: 1;
+}
+ .grid .swiper-pagination-bullet {
+     width: 15px;
+     height: 15px;
+     background: url(../img/octagon.svg) no-repeat center center !important;
+     background-size: cover;
+     opacity: 0.3;
+}
+ .grid .swiper-pagination-bullet-active {
+     opacity: 0.6;
+}
+ .grid .swiper-pagination {
+     padding: 0;
+}
 /* GRADIENTS & HOVERS */
-
-.wine { margin-top: -1px; }
-.malbec-back { background: #d34a60; background: -moz-linear-gradient(left, #d34a60 20%, #871724 80%); background: -webkit-linear-gradient(left, #d34a60 20%,#871724 80%); background: linear-gradient(to right, #d34a60 20%,#871724 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d34a60', endColorstr='#871724',GradientType=1 );
+ .wine {
+     margin-top: -1px;
 }
-
-.malbec-hover a svg .color-square{ fill: #871724; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.malbec-hover a:hover svg .color-square{ opacity: 1; }
-
-.cabernet-back { background: #8a384a; background: -moz-linear-gradient(left, #8a384a 20%, #f39687 80%); background: -webkit-linear-gradient(left, #8a384a 20%,#f39687 80%);
-background: linear-gradient(to right, #8a384a 20%,#f39687 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a384a', endColorstr='#f39687',GradientType=1 ); }
-
-.cabernet-hover a svg .color-square{ fill: #8a374a; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.cabernet-hover a:hover svg .color-square{ opacity: 1; }
-
-.tannat-back { background: #bbb6da; background: -moz-linear-gradient(left, #bbb6da 20%, #8a80bc 80%); background: -webkit-linear-gradient(left, #bbb6da 20%,#8a80bc 80%);
-background: linear-gradient(to right, #bbb6da 20%,#8a80bc 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbb6da', endColorstr='#8a80bc',GradientType=1 ); /* IE6-9 */
-}
-
-.tannat-hover a svg .color-square{ fill: #8a80bc; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.tannat-hover a:hover svg .color-square{ opacity: 1; }
-
-.syrah-back { background: #3d5a62; background: -moz-linear-gradient(left, #3d5a62 20%, #94cc95 80%); background: -webkit-linear-gradient(left, #3d5a62 20%,#94cc95 80%);
-background: linear-gradient(to right, #3d5a62 20%,#94cc95 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d5a62', endColorstr='#94cc95',GradientType=1 ); }
-
-.syrah-hover a svg .color-square{ fill: #3d5a62; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.syrah-hover a:hover svg .color-square{ opacity: 1; }
-
-.torrontes-back {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccca7+20,a89250+80 */
-background: #cccca7; /* Old browsers */
-background: -moz-linear-gradient(left, #cccca7 20%, #a89250 80%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #cccca7 20%,#a89250 80%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #cccca7 20%,#a89250 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccca7', endColorstr='#a89250',GradientType=1 ); /* IE6-9 */}
-
-.torrontes-hover a svg .color-square{ fill: #A89250; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.torrontes-hover a:hover svg .color-square{ opacity: 1; }
-
-.chardonnay-back { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7baa7b+20,e0da84+80 */
-background: #7baa7b; /* Old browsers */
-background: -moz-linear-gradient(left, #7baa7b 20%, #e0da84 80%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #7baa7b 20%,#e0da84 80%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #7baa7b 20%,#e0da84 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7baa7b', endColorstr='#e0da84',GradientType=1 ); /* IE6-9 */ }
-
-.chardonnay-hover a svg .color-square{ fill: #7baa7b; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.chardonnay-hover a:hover svg .color-square{ opacity: 1; }
-
-.torrontes2-back { background: #49c2c7; background: -moz-linear-gradient(left, #49c2c7 20%, #298cb0 80%); background: -webkit-linear-gradient(left, #49c2c7 20%,#298cb0 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c2c7', endColorstr='#298cb0',GradientType=1 ); }
-
-.torrontes2-hover a svg .color-square{ fill: #298cb0; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.torrontes2-hover a:hover svg .color-square{ opacity: 1; }
-
-.torrontes3-back { background: #ed536b; background: -moz-linear-gradient(left, #ed536b 20%, #eaa77c 80%); background: -webkit-linear-gradient(left, #ed536b 20%,#eaa77c 80%);
-background: linear-gradient(to right, #ed536b 20%,#eaa77c 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed536b', endColorstr='#eaa77c',GradientType=1 ); }
-
-.torrontes3-hover a svg .color-square{ fill: #ed536b; opacity: 0.5; -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.torrontes3-hover a:hover svg .color-square{ opacity: 1; }
-
-.wine .wrapper { margin: 0 auto; }
-
-.wine-box-mobile { display: none; }
-
-.wine-box { display: inline-block; vertical-align: bottom; position: relative; width: 49.5%; height: 650px; overflow: hidden; margin-top: 2em; }
-.wine-box svg { position: absolute; top: 10%; left: 0; z-index: 0; width: 80% !important; height: auto; }
-.wine-box picture { position: absolute; top: 2em; right: 30%; width: 190px; z-index: 1;
-    height: auto;  }
-.wine-box picture img { width: 100%; height: auto; }
-.svg-container-desktop { position: absolute; display: block; width: 100%; height: 100%;  }
-.wine-info { width: 49.5%; display: inline-block; vertical-align: top; margin: 2em 0 0 0;}
-.wine-info h3 { font-size: 3em; font-weight: 400; color: #fff; line-height: 1.1em; margin: 1.25em 0 0 0;  }
-.wine-info p { color: #fff; letter-spacing: 0.2em; line-height: 2em; text-align: justify;     margin: 2em 0 0 0; }
-.wine-info h4 { display: inline-block; vertical-align: middle; font-size: 1.8em; color: #fff; line-height: 1.1em; margin: 1em 0 0 0;  }
-.wine-info h4 img { display: inline-block; vertical-align: middle; width: 30px; }
-.wine-info h4 span { display: inline-block; vertical-align: middle; }
-.wine-info .bt { display: none; }
-.invert-box svg { right: 0; left: inherit; }
-.invert-box picture { left: 30%; }
-
-footer { background: #333; }
-footer .logo { width: 50px; }
-footer .wrapper { text-align: center; margin: 0 auto; padding: 2em;  }
-footer .wrapper p { font-family: 'Oswald', sans-serif; color: #fff; font-weight: 300; }
-footer .wrapper a { font-family: 'Oswald', sans-serif; color: #fff; font-weight: 300; text-decoration: none; }
-footer .wrapper a:hover { text-decoration: underline; }
-
-footer ul li { display: inline-block; vertical-align: top; margin-top: 1em;  padding: 0.5em;  }
-footer ul li a { opacity: 0.5;  -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s;  }
-footer ul li a:hover { opacity: 1; }
-
-.contacto { position: relative; display: table; width: 100%; height: 100vh; text-align: center; background: url('../img/fondo-contacto.jpg') no-repeat center center; background-size: cover; }
-.contacto .content { position: relative; display: table-cell; vertical-align: middle; z-index: 3; text-align: center;  }
-.contacto form { display: inline-block; vertical-align: top; width: 600px;     padding: 7em 0 3em 0;  }
-.contacto form h1 { font-size: 3em; font-family: 'Oswald', sans-serif; color: #fff; font-weight: 300; text-transform: uppercase; margin: 0; }
-.contacto form div { display: inline-block; vertical-align: top; width: 46%; margin: 0.5em;  text-align: left ; margin: 0.5em; }
-.contacto form .field-name { display: inline-block; font-family: 'Oswald', sans-serif; color: #fff; padding: 0.15em; font-family: 'Oswald', sans-serif; padding: 0.5em; }
-.contacto input[type="text"], .contacto input[type="email"] { font-family: 'Oswald', sans-serif; width: 100%; padding: 0.5em;  background: none; border: none; border-bottom: 1px solid #fff ; color: #fff; outline: none;}
-.contacto textarea { width: 95%; background: none; border: none; border: 1px solid #fff; padding: 1em; margin: 0.5em; min-height: 200px; font-family: 'Oswald', sans-serif; color: #fff; outline: none; }
-.contacto .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 0; }
-.area-field { width: 100% !important; }
-.area-field .field-name { padding: 0.5em 0.75em !important; }
-
-.message { font-family: 'Oswald', sans-serif; font-size: 1.5em;  font-weight: 300; line-height: 1.8em; color: #fff; text-align: center; }
-.message span { display: block; font-weight: 400; }
-
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-    background-color: transparent !important;
-    background-image: none !important;
-    color: #fff !important;
-}
-
-.legales { margin: 10em auto 2em auto; width: 100%; max-width: 720px; padding: 0 2em; }
-.legales p { font-family: "Arial", sans-serif; color: #333; font-size: 0.9em;  line-height: 1.5em }
-.legales h2 { font-family: "Oswald", sans-serif; color: #333; font-size: 1.3em;  line-height: 1.5em; margin: 2.5em 0 0 0; }
-.legales h3 { font-family: "Oswald", sans-serif; color: #333; font-size: 1.1em;  line-height: 1.5em; margin: 1.5em 0 0 0; }
-.legales a { text-decoration: none; color: #c43d22; font-weight: bold; }
-.legales a:hover { text-decoration: underline;  }
-
-@media handheld {
-    a, a:hover { -webkit-transition: all 0.6s; -o-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; }
-}
-
-@media screen and (max-width: 800px) {
-
-    header .logo { margin: 0; }
-    header nav { padding: 0; }
-    .slider-home { height: 55%; position: absolute !important; }
-    main { top: 55%; }
-    .grid-wines { padding: 0; }
-    .grid { margin: 0 2em }
-    .grid .swiper-container { padding: 0; align-items: center; justify-content: center; }
-    .grid .swiper-wrapper { flex-wrap: nowrap; }
-    .grid .swiper-wrapper div { margin: 0 0 1em 0; padding: 0; }
-    .grid .swiper-wrapper div span { font-size: 0.8em }
-
-    .slider-home .swiper-button-next, .swiper-button-prev { display: none; }
-    .wine-box { margin: 0; height: 520px; }
-    .wine-info { margin: 0.5em 0 0 0; }
-    .wine-info h3 { font-size: 1.8em; line-height: 1.1em; }
-    .wine-info p { letter-spacing: 0.1em; line-height: 1.5em; font-size: 0.9em; }
-    .wine-info h4 { font-size: 1.2em; line-height: 1.1em; }
-    .invert-box picture { left: 15%; }
-
-    .wine-box picture { left: 0; right: 0; width: 100%; display: block; }
-    .wine-box picture img { width: 48%; display: block; margin: 0 auto; }
-    .wine-box svg .tech-file { display: none;  }
-    .wine-info .bt { display: inline-block; margin: 2em 0; text-decoration: none; font-size: 0.7em }
-
-    .contacto form { width: 480px; }
-}
-
-@media screen and (max-width: 720px) {
-    .wine-box picture img { width: 50%; }
-}
-
-@media screen and (max-width: 600px) {
-    .wine-box picture img { width: 60%; }
+ .-back {
+     background-color: #fff;
 
 }
-
-@media screen and (max-width: 550px) {
-
-    .age-content { width: 80%; }
-    header { padding: 1em; }
-    header nav ul li { padding: 0 0.5em !important; }
-    header nav ul li a img { width: 35px !important; }
-    .gray-header nav { padding: 0 !important; }
-    .gray-header nav ul li a img { width: 35px !important; }
-    header .logo { width: 50px; }
-    .slide, .swiper-slide { width: 100% !important; }
-    .swiper-wrapper { width: auto; max-width: 100% !important;  }
-    .slider-home { height: 80%; }
-    main { top: 80%; max-width: 100%;  }
-    .info-slider h2 { font-size: 1.5em; }
-    .wine .wrapper { padding: 0 }
-    .wine-box { display: none; }
-    .wine-box-mobile { display: block; max-width: 100%; padding: 2em 0 0 0; text-align: center; }
-    .wine-box-mobile img { width: 80%; height: auto; margin: 0 auto; }
-    .wine-info {position: static; width: 100%; text-align: center; margin: 0; padding: 0 2em 1em 2em; }
-    .wine-info h3 { text-align: center; width: 100%; }
-    .wine-info h4 { text-align: center; width: 100%; }
-    .wine-info h4 img { padding: 0.15em }
-    .wine-info h4 span { text-align: center; width: 100%; }
-    .wine-info p { text-align: center; width: 100%; }
-
-    .malbec-back, .cabernet-back, .tannat-back, .syrah-back, .torrontes-back, .chardonnay-back, .torrontes2-back, .torrontes3-back { background: none; }
-
-    .malbec-back .wine-box-mobile { background: #d34a60; }
-    .malbec-back .wine-info{ background: #d34a60; background: -moz-linear-gradient(top, #d34a60 0%, #871724 50%); background: -webkit-linear-gradient(top, #d34a60 0%,#871724 50%); background: linear-gradient(to bottom, #d34a60 0%,#871724 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d34a60', endColorstr='#871724',GradientType=0 ); }
-
-    .cabernet-back .wine-box-mobile { background: #f39687; }
-    .cabernet-back .wine-info { background: #f39687; background: -moz-linear-gradient(top, #f39687 0%, #8a384a 50%); background: -webkit-linear-gradient(top, #f39687 0%,#8a384a 50%); background: linear-gradient(to bottom, #f39687 0%,#8a384a 50%);  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f39687', endColorstr='#8a384a',GradientType=0 ); }
-
-    .tannat-back .wine-box-mobile { background: #bbb6da; }
-    .tannat-back .wine-info { background: #bbb6da; background: -moz-linear-gradient(top, #bbb6da 0%, #8a80bc 50%); background: -webkit-linear-gradient(top, #bbb6da 0%,#8a80bc 50%); background: linear-gradient(to bottom, #bbb6da 0%,#8a80bc 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbb6da', endColorstr='#8a80bc',GradientType=0 ); }
-
-    .syrah-back .wine-box-mobile { background: #94cc95; }
-    .syrah-back .wine-info { background: #94cc95; background: -moz-linear-gradient(top, #94cc95 0%, #3d5a62 50%); /background: -webkit-linear-gradient(top, #94cc95 0%,#3d5a62 50%); background: linear-gradient(to bottom, #94cc95 0%,#3d5a62 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94cc95', endColorstr='#3d5a62',GradientType=0 ); }
-
-    .torrontes-back .wine-box-mobile { background: #cccca7; }
-    .torrontes-back .wine-info { background: #cccca7; background: -moz-linear-gradient(top, #cccca7 0%, #a89250 50%); background: -webkit-linear-gradient(top, #cccca7 0%,#a89250 50%); background: linear-gradient(to bottom, #cccca7 0%,#a89250 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccca7', endColorstr='#a89250',GradientType=0 ); }
-
-    .chardonnay-back .wine-box-mobile { background: #e0da84; }
-    .chardonnay-back .wine-info { background: #e0da84; background: -moz-linear-gradient(top,  #e0da84 0%, #7baa7b 40%, #7baa7b 40%); background: -webkit-linear-gradient(top,  #e0da84 0%,#7baa7b 40%,#7baa7b 40%); background: linear-gradient(to bottom,  #e0da84 0%,#7baa7b 40%,#7baa7b 40%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0da84', endColorstr='#7baa7b',GradientType=0 ); }
-
-    .torrontes2-back .wine-box-mobile { background: #49c2c7; }
-    .torrontes2-back .wine-info { background: #49c2c7; background: -moz-linear-gradient(top,  #49c2c7 0%, #298cb0 40%); background: -webkit-linear-gradient(top,  #49c2c7 0%,#298cb0 40%); background: linear-gradient(to bottom,  #49c2c7 0%,#298cb0 40%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c2c7', endColorstr='#298cb0',GradientType=0 ); }
-
-    .torrontes3-back .wine-box-mobile { background: #eaa77c; }
-    .torrontes3-back .wine-info { background: #eaa77c; background: -moz-linear-gradient(top,  #eaa77c 0%, #ed536b 40%); background: -webkit-linear-gradient(top,  #eaa77c 0%,#ed536b 40%); background: linear-gradient(to bottom,  #eaa77c 0%,#ed536b 40%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaa77c', endColorstr='#ed536b',GradientType=0 ); }
-
-    footer .wrapper { padding: 2em 1em; }
-
-    .contacto form { width: 85%; margin: 8em 0 2em 0; padding: 0; }
-    .contacto form h1 { font-size: 2em; }
-    .contacto form div { width: 95%; }
-    .area-field .field-name { padding: 0.5em !important; }
-    .contacto textarea { margin: 0.5em 0 }
-
-    .legales { margin: 8em auto 2em auto; }
+ .malbec-hover a svg .color-square{
+     fill: #871724;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
 }
-
-@media screen and (max-width: 480px) {
-    .wine-info h3 { font-size: 1.7em }
-    .wine-info h3 br { display: none;  }
+ .malbec-hover a:hover svg .color-square{
+     opacity: 1;
 }
-
-@media screen and (max-width: 400px) {
-
-
+ .cabernet-back {
+     background-color: #fff;
 }
+ .cabernet-hover a svg .color-square{
+     fill: #8a374a;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .cabernet-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .tannat-back {
+    background-color: #fff;
+}
+ .tannat-hover a svg .color-square{
+     fill: #8a80bc;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .tannat-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .syrah-back {
+     background-color: #fff;
+}
+ .syrah-hover a svg .color-square{
+     fill: #3d5a62;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .syrah-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .torrontes-back {
+    background-color: #fff;
+}
+ .torrontes-hover a svg .color-square{
+     fill: #A89250;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .torrontes-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .chardonnay-back {
 
-@media screen and (max-width: 320px) {
-    .wine-box-mobile img { width: 90%; height: auto; }
+    background-color: #fff;
+}
+ .chardonnay-hover a svg .color-square{
+     fill: #7baa7b;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .chardonnay-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .torrontes2-back {
+     background-color: #fff;
+}
+ .torrontes2-hover a svg .color-square{
+     fill: #298cb0;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .torrontes2-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .torrontes3-back {
+     background-color: #fff;
+}
+ .torrontes3-hover a svg .color-square{
+     fill: #ed536b;
+     opacity: 0.5;
+     -webkit-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+ .torrontes3-hover a:hover svg .color-square{
+     opacity: 1;
+}
+ .wine .wrapper {
+     margin: 0 auto;
+}
+ .border-r {
+    border-right: 30px solid #f6f5ec;
+}
+ .border-l {
+    border-left: 30px solid #f6f5ec;
+}
+ .wine-box-mobile {
+     display: none;
+}
+ .wine-box {
+     display: inline-block;
+     vertical-align: bottom;
+     position: relative;
+     width: 49.5%;
+     height: 650px;
+     overflow: hidden;
+     ;
+     text-transform: uppercase;
+     background-color: #f6f5ec;
+}
+ .wine-box svg {
+     position: absolute;
+     top: 10%;
+     left: 0;
+     z-index: 0;
+     width: 80% !important;
+     height: auto;
+}
+ .wine-box picture {
+     position: absolute;
+     top: 2em;
+     right: 30%;
+     width: 190px;
+     z-index: 1;
+     height: auto;
+}
+ .wine-box picture img {
+     width: 100%;
+     height: auto;
+}
+ .svg-container-desktop {
+     position: absolute;
+     display: block;
+     width: 100%;
+     height: 100%;
+}
+ .wine-info {
+     width: 49.5%;
+     display: inline-block;
+     vertical-align: top;
+     padding: 0px 50px;
+     background-color: #fff;
+     height: 650px;
+}
+ .wine-info h3 {
+     font-size: 3em;
+     font-weight: 400;
+     color: #CC6C19;
+     line-height: 1.1em;
+     margin: 1.25em 0 0 0;
+     text-transform: uppercase;
+}
+ .wine-info p {
+     color: #4A4A49;
+     letter-spacing: 0.05em;
+     line-height: 1.4em;
+     margin: 2em 0 0 0;
+     text-transform: uppercase;
+}
+ .wine-info h4 {
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 1.8em;
+     color: #CC6C19;
+     line-height: 1.1em;
+     margin: 1em 0 0 0;
+     text-transform: uppercase;
+}
+ .wine-info h4 img {
+     display: inline-block;
+     vertical-align: middle;
+     width: 30px;
+}
+ .wine-info h4 span {
+     display: inline-block;
+     vertical-align: middle;
+}
+ .wine-info .bt {
+     display: none;
+}
+.wine-info-2 {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    height: 650px;
+}
+.wine-info-2 h3 {
+    font-size: 3em;
+    font-weight: 400;
+    color: #54B0D5;
+    line-height: 1.1em;
+    margin: 1.25em 0 0 0;
+    text-transform: uppercase;
+}
+.wine-info-2 p {
+  color: #4A4A49;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+  margin: 2em 0 0 0;
+  text-transform: uppercase;
+}
+.wine-info-2 h4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.8em;
+    color: #54B0D5;
+    line-height: 1.1em;
+    margin: 1em 0 0 0;
+    text-transform: uppercase;
+}
+.wine-info-2 h4 img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+}
+.wine-info-2 h4 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.wine-info-2 .bt {
+    display: none;
+}
+ .invert-box svg {
+     right: 0;
+     left: inherit;
+}
+ .invert-box picture {
+     left: 30%;
+}
+ footer {
+     background: #333;
+}
+ footer .logo {
+     width: 50px;
+}
+ footer .wrapper {
+     text-align: center;
+     margin: 0 auto;
+     padding: 2em;
+}
+ footer .wrapper p {
+     font-family: 'Oswald', sans-serif;
+     color: #fff;
+     font-weight: 300;
+}
+ footer .wrapper a {
+     font-family: 'Oswald', sans-serif;
+     color: #fff;
+     font-weight: 300;
+     text-decoration: none;
+}
+ footer .wrapper a:hover {
+     text-decoration: underline;
+}
+ footer ul li {
+     display: inline-block;
+     vertical-align: top;
+     margin-top: 1em;
+     padding: 0.5em;
+}
+ footer ul li a {
+     opacity: 0.5;
+     -webkit-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+     transition: all 0.6s;
+}
+ footer ul li a:hover {
+     opacity: 1;
+}
+ .contacto {
+     position: relative;
+     display: table;
+     width: 100%;
+     height: 100vh;
+     text-align: center;
+     background: url('../img/fondo-contacto.jpg') no-repeat center center;
+     background-size: cover;
+}
+ .contacto .content {
+     position: relative;
+     display: table-cell;
+     vertical-align: middle;
+     z-index: 3;
+     text-align: center;
+}
+ .contacto form {
+     display: inline-block;
+     vertical-align: top;
+     width: 600px;
+     padding: 7em 0 3em 0;
+}
+ .contacto form h1 {
+     font-size: 3em;
+     font-family: 'Oswald', sans-serif;
+     color: #fff;
+     font-weight: 300;
+     text-transform: uppercase;
+     margin: 0;
+}
+ .contacto form div {
+     display: inline-block;
+     vertical-align: top;
+     width: 46%;
+     margin: 0.5em;
+     text-align: left ;
+     margin: 0.5em;
+}
+ .contacto form .field-name {
+     display: inline-block;
+     font-family: 'Oswald', sans-serif;
+     color: #fff;
+     padding: 0.15em;
+     font-family: 'Oswald', sans-serif;
+     padding: 0.5em;
+}
+ .contacto input[type="text"], .contacto input[type="email"] {
+     font-family: 'Oswald', sans-serif;
+     width: 100%;
+     padding: 0.5em;
+     background: none;
+     border: none;
+     border-bottom: 1px solid #fff ;
+     color: #fff;
+     outline: none;
+}
+ .contacto textarea {
+     width: 95%;
+     background: none;
+     border: none;
+     border: 1px solid #fff;
+     padding: 1em;
+     margin: 0.5em;
+     min-height: 200px;
+     font-family: 'Oswald', sans-serif;
+     color: #fff;
+     outline: none;
+}
+ .contacto .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.7);
+     z-index: 0;
+}
+ .area-field {
+     width: 100% !important;
+}
+ .area-field .field-name {
+     padding: 0.5em 0.75em !important;
+}
+ .message {
+     font-family: 'Oswald', sans-serif;
+     font-size: 1.5em;
+     font-weight: 300;
+     line-height: 1.8em;
+     color: #fff;
+     text-align: center;
+}
+ .message span {
+     display: block;
+     font-weight: 400;
+}
+ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+     background-color: transparent !important;
+     background-image: none !important;
+     color: #fff !important;
+}
+ .legales {
+     margin: 10em auto 2em auto;
+     width: 100%;
+     max-width: 720px;
+     padding: 0 2em;
+}
+ .legales p {
+     font-family: "Arial", sans-serif;
+     color: #333;
+     font-size: 0.9em;
+     line-height: 1.5em
+}
+ .legales h2 {
+     font-family: "Oswald", sans-serif;
+     color: #333;
+     font-size: 1.3em;
+     line-height: 1.5em;
+     margin: 2.5em 0 0 0;
+}
+ .legales h3 {
+     font-family: "Oswald", sans-serif;
+     color: #333;
+     font-size: 1.1em;
+     line-height: 1.5em;
+     margin: 1.5em 0 0 0;
+}
+ .legales a {
+     text-decoration: none;
+     color: #c43d22;
+     font-weight: bold;
+}
+ .legales a:hover {
+     text-decoration: underline;
+}
+ #rig {
+     max-width:100%;
+     margin:0 auto;
+    /*center aligned*/
+     padding:0;
+     font-size:0;
+    /* Remember to change it back to normal font size if have captions */
+     list-style:none;
+     background-color:#fff;
+}
+ #rig li {
+     display: inline-block;
+     *display:inline;
+    /*for IE6 - IE7*/
+     width:25%;
+     vertical-align:middle;
+     box-sizing:border-box;
+     margin:0;
+     padding: 0px 4px 4px 0px;
+}
+/* The wrapper for each item */
+ .rig-cell {
+    /*margin:12px;
+     box-shadow:0 0 6px rgba(0,0,0,0.3);
+    */
+     display:block;
+     position: relative;
+     overflow:hidden;
+}
+/* If have the image layer */
+ .rig-img {
+     display:block;
+     width: 100%;
+     height: auto;
+     border:none;
+     transform:scale(1);
+     transition:all 1s;
+     background: url(img/link.png) no-repeat center 20%;
+}
+ #rig li:hover .rig-img {
+     transform:scale(1.05);
+}
+/* If have the overlay layer */
+ .rig-overlay {
+     position: absolute;
+     display:block;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     margin: auto;
+     background-size:50px 50px;
+     background-color: rgba(0, 0, 0, 0.5);
+     opacity:0;
+     filter:alpha(opacity=0);
+    /*For IE6 - IE8*/
+     transition:all 0.6s;
+     align-items: center;
+     justify-content: center;
+}
+ #rig li:hover .rig-overlay {
+     opacity:0.8;
+}
+/* If have captions */
+ .rig-text {
+     display:inline-block;
+     vertical-align: middle;
+     padding:0 30px;
+     box-sizing:border-box;
+     position:absolute;
+     left:0;
+     width:100%;
+     text-align:center;
+     text-transform:capitalize;
+     font-size:32px;
+     font-weight:bold;
+     font-family:'BebasKai-Regular', sans-serif;
+     font-weight:normal!important;
+     top:40%;
+     color:white;
+     opacity:0;
+     filter:alpha(opacity=0);
+    /*For older IE*/
+     transform:translateY(-20px);
+     transition:all .3s;
+}
+ #rig li:hover .rig-text {
+     transform:translateY(0px);
+     opacity:0.9;
+}
+ .svg-container-desktop img {
+     position: ;
+     display: block;
+     width: auto;
+     height: 100%;
+     margin: 0 auto;
+}
+ @media (max-width: 9000px) {
+     #rig li {
+         width:25%;
+    }
+}
+ @media (max-width: 700px) {
+     #rig li {
+         width:33.33%;
+    }
+}
+ @media (max-width: 550px) {
+     #rig li {
+         width:50%;
+    }
+}
+ @media handheld {
+     a, a:hover {
+         -webkit-transition: all 0.6s;
+         -o-transition: all 0.6s;
+         -moz-transition: all 0.6s;
+         transition: all 0.6s;
+    }
+}
+ @media screen and (max-width: 800px) {
+     header .logo {
+         margin: 0;
+    }
+     header nav {
+         padding: 0;
+    }
+     .slider-home {
+         height: 55%;
+         position: absolute !important;
+    }
+     main {
+         top: 55%;
+    }
+     .grid-wines {
+         padding: 0;
+    }
+     .grid {
+         margin: 0 2em
+    }
+     .grid .swiper-container {
+         padding: 0;
+         align-items: center;
+         justify-content: center;
+    }
+     .grid .swiper-wrapper {
+         flex-wrap: nowrap;
+    }
+     .grid .swiper-wrapper div {
+         margin: 0 0 1em 0;
+         padding: 0;
+    }
+     .grid .swiper-wrapper div span {
+         font-size: 0.8em
+    }
+     .slider-home .swiper-button-next, .swiper-button-prev {
+         display: none;
+    }
+     .wine-box {
+         margin: 0;
+         height: 520px;
+    }
+     .wine-info {
+         margin: 0.5em 0 0 0;
+    }
+     .wine-info h3 {
+         font-size: 1.8em;
+         line-height: 1.1em;
+    }
+     .wine-info p {
+         letter-spacing: 0.1em;
+         line-height: 1.5em;
+         font-size: 0.9em;
+    }
+     .wine-info h4 {
+         font-size: 1.2em;
+         line-height: 1.1em;
+    }
+    .wine-info-2 {
+        margin: 0.5em 0 0 0;
+   }
+    .wine-info-2 h3 {
+        font-size: 1.8em;
+        line-height: 1.1em;
+   }
+    .wine-info-2 p {
+        letter-spacing: 0.1em;
+        line-height: 1.5em;
+        font-size: 0.9em;
+   }
+    .wine-info-2 h4 {
+        font-size: 1.2em;
+        line-height: 1.1em;
+   }
+     .invert-box picture {
+         left: 15%;
+    }
+     .wine-box picture {
+         left: 0;
+         right: 0;
+         width: 100%;
+         display: block;
+    }
+     .wine-box picture img {
+         width: 48%;
+         display: block;
+         margin: 0 auto;
+    }
+     .wine-box svg .tech-file {
+         display: none;
+    }
+     .wine-info .bt {
+         display: inline-block;
+         margin: 2em 0;
+         text-decoration: none;
+         font-size: 0.7em
+    }
+     .contacto form {
+         width: 480px;
+    }
+    .border-r {
+       border-right: none;
+   }
+    .border-l {
+       border-left: none;
+}
+ @media screen and (max-width: 720px) {
+     .wine-box picture img {
+         width: 50%;
+    }
+}
+ @media screen and (max-width: 600px) {
+     .wine-box picture img {
+         width: 60%;
+    }
+}
+ @media screen and (max-width: 550px) {
+     .age-content {
+         width: 80%;
+    }
+     header {
+         padding: 1em;
+    }
+     header nav ul li {
+         padding: 0 0.5em !important;
+    }
+     header nav ul li a img {
+         width: 35px !important;
+    }
+     .gray-header nav {
+         padding: 0 !important;
+    }
+     .gray-header nav ul li a img {
+         width: 35px !important;
+    }
+     header .logo {
+         width: 50px;
+    }
+     .slide, .swiper-slide {
+         width: 100% !important;
+    }
+     .swiper-wrapper {
+         width: auto;
+         max-width: 100% !important;
+    }
+     .slider-home {
+         height: 80%;
+    }
+     main {
+         top: 80%;
+         max-width: 100%;
+    }
+     .info-slider h2 {
+         font-size: 1.5em;
+    }
+     .wine .wrapper {
+         padding: 0
+    }
+     .wine-box {
+         display: none;
+    }
+     .wine-box-mobile {
+         display: block;
+         max-width: 100%;
+         padding: 2em 0 0 0;
+         text-align: center;
+    }
+     .wine-box-mobile img {
+         width: 80%;
+         height: auto;
+         margin: 0 auto;
+    }
+     .wine-info {
+        position: static;
+         width: 100%;
+         text-align: center;
+         margin: 0;
+         padding: 0 2em 1em 2em;
+    }
+    .wine-info-2 {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0 2em 1em 2em;
+}
+     .wine-info h3 {
+         text-align: center;
+         width: 100%;
+    }
+     .wine-info h4 {
+         text-align: center;
+         width: 100%;
+    }
+     .wine-info h4 img {
+         padding: 0.15em
+    }
+     .wine-info h4 span {
+         text-align: center;
+         width: 100%;
+    }
+     .wine-info p {
+         text-align: center;
+         width: 100%;
+    }
+     .malbec-back, .cabernet-back, .tannat-back, .syrah-back, .torrontes-back, .chardonnay-back, .torrontes2-back, .torrontes3-back {
+         background: none;
+    }
+     .malbec-back .wine-box-mobile {
+
+    }
+
+
+     footer .wrapper {
+         padding: 2em 1em;
+    }
+     .contacto form {
+         width: 85%;
+         margin: 8em 0 2em 0;
+         padding: 0;
+    }
+     .contacto form h1 {
+         font-size: 2em;
+    }
+     .contacto form div {
+         width: 95%;
+    }
+     .area-field .field-name {
+         padding: 0.5em !important;
+    }
+     .contacto textarea {
+         margin: 0.5em 0
+    }
+     .legales {
+         margin: 8em auto 2em auto;
+    }
+}
+ @media screen and (max-width: 480px) {
+     .wine-info h3 {
+         font-size: 1.7em
+    }
+     .wine-info h3 br {
+         display: none;
+    }
+}
+ @media screen and (max-width: 400px) {
+}
+ @media screen and (max-width: 320px) {
+     .wine-box-mobile img {
+         width: 90%;
+         height: auto;
+    }
+}
+.malbec, .cabernet, .tannat, .syrah, .torrontes, .chardonnay, .torrontes2, .torrontes3
+ {
+     background-color: #F5F4EC;
 }
