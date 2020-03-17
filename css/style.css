@@ -2,6 +2,17 @@
  font-family: 'Droid Serif', serif;
  */
  @font-face {
+     font-family:'DINCondensed-Bold';
+     src: url('../fonts/DINCondensed-Bold.eot');
+     src: url('../fonts/DINCondensed-Bold.eot?#iefix') format('embedded-opentype');
+     src: url('../fonts/DINCondensed-Bold.woff') format('woff');
+     src: url('../fonts/DINCondensed-Bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     unicode-range: U+0020-00FE;
+}
+ @font-face {
      font-family:'Flavour';
      src: url('../fonts/FlavourRegular.eot');
      src: url('../fonts/FlavourRegular.eot?#iefix') format('embedded-opentype');
@@ -309,6 +320,7 @@ table{
      -o-transition: all 0.6s;
      -moz-transition: all 0.6s;
      transition: all 0.6s;
+     display: none;
 }
  header nav {
      float: right;
@@ -344,6 +356,7 @@ table{
  .gray-header .logo {
      width: 160px !important;
      margin: 9px 42px !important;
+     display: block;
 }
  .gray-header nav {
      padding: 0 0.5em !important;
@@ -351,8 +364,11 @@ table{
  .gray-header nav ul li a img {
      width: 30px !important;
 }
+.gray{
+   background: rgb(241, 243, 244);
+}
  .nav-up {
-     top: -200px !important;
+     top: 0px !important;
 }
  .nav-down {
      top: 0;
@@ -379,6 +395,24 @@ table{
  .white-empty:hover {
      background: #fff;
      color: #333;
+}
+.wine-cta {
+    background: none;
+    color: #cc6d1a;
+    border: 1px solid #cc6d1a;
+    display: table!important;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    margin: 5px 0px;
+}
+.wine-cta:hover {
+    background: #cc6d1a;
+    color: #fff;
+}
+.cta img {
+  margin: 10px 0px;
 }
  .slider-home {
      position: fixed !important;
@@ -414,6 +448,14 @@ table{
  .slide1 {
      background: url('../img/slider1.jpg') center center no-repeat;
      background-size: cover;
+}
+.slide-2{
+  background: url('../img/slider2.jpg') center center no-repeat;
+  background-size: cover;
+}
+.slide-1{
+  background: url('../img/slider1.jpg') center center no-repeat;
+  background-size: cover;
 }
  main {
      position: absolute;
@@ -658,12 +700,7 @@ table{
  .wine .wrapper {
      margin: 0 auto;
 }
- .border-r {
-    border-right: 30px solid #f6f5ec;
-}
- .border-l {
-    border-left: 30px solid #f6f5ec;
-}
+
  .wine-box-mobile {
      display: none;
 }
@@ -675,8 +712,9 @@ table{
      height: 650px;
      overflow: hidden;
      ;
-     text-transform: uppercase;
+     text-transform: ;
      background-color: #f6f5ec;
+     font-family: FlavourRegular;
 }
  .wine-box svg {
      position: absolute;
@@ -715,25 +753,30 @@ table{
  .wine-info h3 {
      font-size: 3em;
      font-weight: 400;
-     color: #CC6C19;
+     color: #BA8383;
      line-height: 1.1em;
      margin: 1.25em 0 0 0;
      text-transform: uppercase;
 }
+.wine-info::before {
+  content: url(image.jpg);
+}
+
  .wine-info p {
-     color: #4A4A49;
-     letter-spacing: 0.05em;
-     line-height: 1.4em;
-     margin: 2em 0 0 0;
-     text-transform: uppercase;
+   color: #4A4A49;
+  letter-spacing: 0.01em;
+  line-height: 1.4em;
+  margin: 2em 0 0 0;
+  font-family: 'DINCondensed-Bold';
+  font-size: 18px;
 }
  .wine-info h4 {
      display: inline-block;
      vertical-align: middle;
      font-size: 1.8em;
-     color: #CC6C19;
+     color: #BA8383;
      line-height: 1.1em;
-     margin: 1em 0 0 0;
+     margin: 1em 0 -1em 0;
      text-transform: uppercase;
 }
  .wine-info h4 img {
@@ -753,30 +796,32 @@ table{
     display: inline-block;
     vertical-align: top;
     background-color: #fff;
+    padding: 0 50px;
     height: 650px;
 }
 .wine-info-2 h3 {
     font-size: 3em;
     font-weight: 400;
-    color: #54B0D5;
+    color: #BEC499;
     line-height: 1.1em;
     margin: 1.25em 0 0 0;
     text-transform: uppercase;
 }
 .wine-info-2 p {
   color: #4A4A49;
-  letter-spacing: 0.05em;
-  line-height: 1.4em;
-  margin: 2em 0 0 0;
-  text-transform: uppercase;
+ letter-spacing: 0.01em;
+ line-height: 1.4em;
+ margin: 2em 0 0 0;
+ font-family: 'DINCondensed-Bold';
+ font-size: 18px;
 }
 .wine-info-2 h4 {
     display: inline-block;
     vertical-align: middle;
     font-size: 1.8em;
-    color: #54B0D5;
+    color: #BEC499;
     line-height: 1.1em;
-    margin: 1em 0 0 0;
+    margin: 1em 0 -1em 0;
     text-transform: uppercase;
 }
 .wine-info-2 h4 img {
@@ -791,6 +836,97 @@ table{
 .wine-info-2 .bt {
     display: none;
 }
+.wine-info-3 {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+        padding: 0 50px;
+    height: 650px;
+}
+.wine-info-3 h3 {
+    font-size: 3em;
+    font-weight: 400;
+    color: #8FB7D8;
+    line-height: 1.1em;
+    margin: 1.25em 0 0 0;
+    text-transform: uppercase;
+}
+.wine-info-3 p {
+  color: #4A4A49;
+ letter-spacing: 0.01em;
+ line-height: 1.4em;
+ margin: 2em 0 0 0;
+ font-family: 'DINCondensed-Bold';
+ font-size: 18px;
+}
+.wine-info-3 h4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.8em;
+    color: #8FB7D8;
+    line-height: 1.1em;
+    margin: 1em 0 -1em 0;
+    text-transform: uppercase;
+}
+.wine-info-3 h4 img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+}
+.wine-info-3 h4 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.wine-info-3 .bt {
+    display: none;
+}
+.wine-info-4 {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    height: 650px;
+        padding: 0 50px;
+}
+.wine-info-4 h3 {
+    font-size: 3em;
+    font-weight: 400;
+    color: #DB9593;
+    line-height: 1.1em;
+    margin: 1.25em 0 0 0;
+    text-transform: uppercase;
+}
+.wine-info-4 p {
+  color: #4A4A49;
+ letter-spacing: 0.01em;
+ line-height: 1.4em;
+ margin: 2em 0 0 0;
+ font-family: 'DINCondensed-Bold';
+ font-size: 18px;
+}
+.wine-info-4 h4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.8em;
+    color: #DB9593;
+    line-height: 1.1em;
+    margin: 1em 0 -1em 0;
+    text-transform: uppercase;
+}
+.wine-info-4 h4 img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+}
+.wine-info-4 h4 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.wine-info-4 .bt {
+    display: none;
+}
+
  .invert-box svg {
      right: 0;
      left: inherit;
@@ -839,6 +975,25 @@ table{
  footer ul li a:hover {
      opacity: 1;
 }
+#itemsMenuFoo ul li {
+  list-style: none;
+}
+#itemsMenuFoo li {
+  height: 45px;
+  line-height:2em;
+  margin-top: 5px; }
+#itemsMenuFoo li div {
+  height: 30px;
+  width:30px;
+  margin-right:15px;
+  background-image: url(../img/rs_foo.png);
+  float:left;}
+#itemsMenuFoo li:nth-child(1) div {background-position: 0px;}
+#itemsMenuFoo li:nth-child(2) div {background-position: 30px;}
+#itemsMenuFoo li:nth-child(3) div {background-position: 69px;}
+#itemsMenuFoo li:nth-child(4) div {background-position: 108px;}
+#itemsMenuFoo li:nth-child(5) div {background-position: 147px;}
+
  .contacto {
      position: relative;
      display: table;
@@ -1137,6 +1292,7 @@ table{
     }
      .wine-info {
          margin: 0.5em 0 0 0;
+         height: 520px;
     }
      .wine-info h3 {
          font-size: 1.8em;
@@ -1153,6 +1309,7 @@ table{
     }
     .wine-info-2 {
         margin: 0.5em 0 0 0;
+        height: 520px;
    }
     .wine-info-2 h3 {
         font-size: 1.8em;
@@ -1167,6 +1324,39 @@ table{
         font-size: 1.2em;
         line-height: 1.1em;
    }
+   .wine-info-3 {
+       margin: 0.5em 0 0 0;
+       height: 520px;
+  }
+   .wine-info-3 h3 {
+       font-size: 1.8em;
+       line-height: 1.1em;
+  }
+   .wine-info-3 p {
+       letter-spacing: 0.1em;
+       line-height: 1.5em;
+       font-size: 0.9em;
+  }
+   .wine-info-3 h4 {
+       font-size: 1.2em;
+       line-height: 1.1em;
+  }
+  .wine-info-4 {
+      margin: 0.5em 0 0 0;
+ }
+  .wine-info-4 h3 {
+      font-size: 1.8em;
+      line-height: 1.1em;
+ }
+  .wine-info-4 p {
+      letter-spacing: 0.1em;
+      line-height: 1.5em;
+      font-size: 0.9em;
+ }
+  .wine-info-4 h4 {
+      font-size: 1.2em;
+      line-height: 1.1em;
+ }
      .invert-box picture {
          left: 15%;
     }
@@ -1189,7 +1379,30 @@ table{
          margin: 2em 0;
          text-decoration: none;
          font-size: 0.7em
+         float: left;
+         margin: 0 auto;
     }
+    .wine-info-2 .bt {
+    display: inline-block;
+    margin: 2em 0;
+    text-decoration: none;
+    font-size: 0.7em float: left;
+    margin: 0 auto;
+      }
+      .wine-info-3 .bt {
+      display: inline-block;
+      margin: 2em 0;
+      text-decoration: none;
+      font-size: 0.7em float: left;
+      margin: 0 auto;
+      }
+      .wine-info-4 .bt {
+      display: inline-block;
+      margin: 2em 0;
+      text-decoration: none;
+      font-size: 0.7em float: left;
+      margin: 0 auto;
+      }
      .contacto form {
          width: 480px;
     }
@@ -1198,6 +1411,14 @@ table{
    }
     .border-l {
        border-left: none;
+}
+#itemsMenuFoo li div {
+    height: 30px;
+    width: 30px;
+    margin-right: 6px;
+    background-image: url(../img/rs_foo.png);
+    float: left;
+}
 }
  @media screen and (max-width: 720px) {
      .wine-box picture img {
@@ -1217,7 +1438,7 @@ table{
          padding: 1em;
     }
      header nav ul li {
-         padding: 0 0.5em !important;
+         padding: 0 0.6em !important;
     }
      header nav ul li a img {
          width: 35px !important;
@@ -1240,6 +1461,25 @@ table{
     }
      .slider-home {
          height: 80%;
+    }
+    .slide-1{
+      background: url('../img/slider1-disc.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    .slide-2{
+      background: url('../img/slider2-100.jpg') center center no-repeat;
+      background-size: cover;
+      background-position: left;
+    }
+    .gray-header{
+      background-color: rgb(241, 243, 244);
+    }
+        .gray-header .logo {
+        width: 160px !important;
+        margin: 10px auto!important;
+        display: block;
+        float: none;
+        display: none;
     }
      main {
          top: 80%;
@@ -1272,13 +1512,27 @@ table{
          margin: 0;
          padding: 0 2em 1em 2em;
     }
-    .wine-info-2 {
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0 2em 1em 2em;
-}
+      .wine-info-2 {
+      position: static;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0 2em 1em 2em;
+  }
+      .wine-info-3 {
+      position: static;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0 2em 1em 2em;
+      }
+      .wine-info-4 {
+      position: static;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0 2em 1em 2em;
+      }
      .wine-info h3 {
          text-align: center;
          width: 100%;

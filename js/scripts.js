@@ -92,16 +92,16 @@ function hasScrolled() {
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight) {
-        // Scroll Down 
+        // Scroll Down
         if (st < screenHeight) {
-            $('header').removeClass('nav-down').addClass('nav-up');
-        } else {
+           $('header').removeClass('nav-down').addClass('nav-up');
+     } else {
             $('header').removeClass('nav-down').addClass('nav-up');
         }
         if (st > screenHeight) {
-            //setInterval(function() {
+            setInterval(function() {
             $('header').addClass('gray-header');
-            //}, 500);
+          }, 500);
         }
     } else {
         // Scroll Up
