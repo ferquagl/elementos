@@ -168,10 +168,3 @@ $(document).on('ready', function () {
     }
 
 });
-
-// Small Screen
-if(windowWidth <= 550){
-    $(document).ready(function() {
-        $(".wow").removeClass("wow");
-    });
-}

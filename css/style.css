@@ -1583,6 +1583,7 @@ table{
      .legales {
          margin: 8em auto 2em auto;
     }
+     .wow{ animation-name: none !important; visibility: visible !important; }
 }
  @media screen and (max-width: 480px) {
      .wine-info h3 {
