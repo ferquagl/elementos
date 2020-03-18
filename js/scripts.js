@@ -99,9 +99,9 @@ function hasScrolled() {
             $('header').removeClass('nav-down').addClass('nav-up');
         }
         if (st > screenHeight) {
-            setInterval(function() {
+            //setInterval(function() {
             $('header').addClass('gray-header');
-          }, 500);
+        //  }, 500);
         }
     } else {
         // Scroll Up
